@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS for Navbar -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* General Styles */
+      body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      nav {
+        background-color: #ff3366; /* Pink color for women's theme */
+        color: white;
+      }
+
+      .navbar-nav > li {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .navbar-nav .nav-link {
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ffcccb; /* Lighter pink hover effect */
+      }
+
+      /* Header Section */
+      header {
+        background-color: #ff3366; /* Pink background for the header */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 60px;
+        letter-spacing: 2px;
+      }
+
+      /* Contact Section */
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        align-items: center;
+      }
+
+      /* Left-side image styling */
+      .left-side {
+        flex: 1;
+        margin-right: 40px;
+      }
+
+      .left-side img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Right-side content styling */
+      .right-side {
+        flex: 2;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        line-height: 1.8;
+        color: #555;
+      }
+
+      .right-side h2 {
+        font-size: 40px;
+        color: #ff3366;
+      }
+
+      .right-side p {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .contact-form button {
+        background-color: #ff3366;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .contact-form button:hover {
+        background-color: #e62e56;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin: 20px;
+        }
+
+        .left-side,
+        .right-side {
+          width: 100%;
+          margin: 0;
+          padding: 15px;
+        }
+
+        .right-side h2 {
+          font-size: 30px;
+        }
+
+        .right-side p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <!-- Adding the logo in the navbar -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <!-- <img src="img/Clothing.png" alt="Vanilla Logo" class="logo" /> -->
+            <span class="ms-2">Vanilla</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactUs.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Header Section -->
+    <header>Contact Us</header>
+
+    <!-- Main Content Section -->
+    <div class="contact-container">
+      <!-- Left-side Image -->
+      <div class="left-side">
+        <img src="img/girl3.jpg" alt="Contact Us" />
+      </div>
+
+      <!-- Right-side Content -->
+      <div class="right-side">
+        <h2>Get In Touch</h2>
+        <p>
+          We'd love to hear from you! Whether you have questions, feedback, or
+          ideas, feel free to reach out. Fill in the form below, and we'll get
+          back to you as soon as possible.
+        </p>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

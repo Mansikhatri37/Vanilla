@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS for Navbar -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* General Styles */
+      body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      nav {
+        background-color: #ff3366; /* Pink color for women's theme */
+        color: white;
+      }
+
+      .navbar-nav > li {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .navbar-nav .nav-link {
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ffcccb; /* Lighter pink hover effect */
+      }
+
+      /* Header Section */
+      header {
+        background-color: #ff3366; /* Pink background for the header */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 60px;
+        letter-spacing: 2px;
+      }
+
+      /* Layout container */
+      .about-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        align-items: center;
+      }
+
+      /* Left-side image styling */
+      .left-side {
+        flex: 1;
+        margin-right: 40px;
+      }
+
+      .left-side img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        filter: grayscale(100%); /* Black and white effect */
+      }
+
+      /* Right-side content styling */
+      .right-side {
+        flex: 2;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        line-height: 1.8;
+        color: #555;
+      }
+
+      .right-side h2 {
+        font-size: 40px;
+        color: #ff3366;
+      }
+
+      .right-side p {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .about-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin: 20px;
+        }
+
+        .left-side,
+        .right-side {
+          width: 100%;
+          margin: 0;
+          padding: 15px;
+        }
+
+        .right-side h2 {
+          font-size: 30px;
+        }
+
+        .right-side p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <!-- Adding the logo in the navbar -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- <img src="img/Clothing.png" alt="Vanilla Logo" class="logo" /> -->
+          <span class="ms-2">Vanilla</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="about-container">
+      <!-- Left-side Image -->
+      <div class="left-side">
+        <img src="img/girl5.jpg" alt="Group Image" />
+      </div>
+
+      <!-- Right-side Content -->
+      <div class="right-side">
+        <h2>Who We Are</h2>
+        <p>
+          We are a group committed to combining fashion with purpose. Our
+          mission is to use fashion as a tool to make a positive impact on
+          society. By promoting sustainability, diversity, and ethical fashion
+          practices, we aim to create awareness and change through what we wear.
+          <br /><br />
+          Our focus is not only on trends but on promoting a cause that aligns
+          with values of inclusion, diversity, and empowerment. Fashion is more
+          than just style – it’s about making a statement and supporting
+          initiatives that benefit communities and the environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products</title>
+    <!-- Latest Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f4f4f4;
+        scroll-behavior: smooth; /* For smooth scrolling */
+      }
+
+      .navbar {
+        background-color: #ff3366; /* Pink color for navbar */
+      }
+
+      .navbar-nav > li {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .navbar-nav .nav-link {
+        color: #fff !important;
+        font-size: 18px;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #f39c12 !important;
+      }
+
+      .navbar .navbar-brand {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+      }
+
+      h1,
+      h4 {
+        text-align: center;
+        color: #333;
+      }
+
+      h1 {
+        color: #ff3366;
+        font-size: 60px;
+      }
+
+      h4 {
+        font-size: 50px;
+        font-weight: bolder;
+        margin-top: 50px;
+      }
+
+      .container {
+        margin-top: 40px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .grid-container img {
+        width: 100%;
+        height: 300px; /* Fixed height for all images */
+        object-fit: cover; /* Ensures the images cover the area without distortion */
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .grid-container h2 {
+        text-align: center;
+        margin-top: 10px;
+        color: #ff3366;
+      }
+
+      .product-price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .product-price span {
+        font-size: 20px;
+        color: #999;
+        text-decoration: line-through;
+        margin-left: 10px;
+      }
+
+      .product-price.discount {
+        color: #e74c3c;
+      }
+
+      .search-bar {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        font-size: 17px;
+        border-radius: 5px;
+      }
+
+      .col {
+        text-align: center;
+      }
+
+      .col img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .logodiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        margin: 20px;
+        height: 250px;
+        width: 300px;
+      }
+
+      .col h2 {
+        color: #ff3366;
+        font-size: 22px;
+        margin-top: 10px;
+      }
+
+      /* Carousel Styling */
+      .carousel-item img {
+        height: 80vh;
+        object-fit: cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ShopNow</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#newbie">New In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#specials">Special Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dresses">Dresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tops">Top Notch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Jewellery">Jewellery</a>
+            </li>
+          </ul>
+          <input type="text" class="search-bar" placeholder="Search.." />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Logo Section -->
+    <div class="logodiv">
+      <img src="img/Clothing.png" class="logo" />
+    </div>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/girl1.jpg" class="d-block w-100" alt="New Dress" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/girl2.jpg" class="d-block w-100" alt="Special Dress" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/girl3.jpg" class="d-block w-100" alt="Dress 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/girl5.jpg" class="d-block w-100" alt="Top 1" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <br /><br /><br />
+
+      <div id="newbie">
+        <h1>New In</h1>
+        <div class="grid-container">
+          <div class="col">
+            <img src="img/new dress.jpg" alt="" />
+            <h2>New Dresses</h2>
+          </div>
+          <div class="col">
+            <img src="img/new crop top.jpg" alt="" />
+            <h2>Crop Tops</h2>
+          </div>
+          <div class="col">
+            <img src="img/new blazer.jpg" alt="" />
+            <h2>Blazers</h2>
+          </div>
+          <div class="col">
+            <img src="img/new top.jpg" alt="" />
+            <h2>Tops</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="specials">
+        <h4>Special Prices</h4>
+        <div class="grid-container">
+          <div class="col">
+            <img src="img/special dress.jpg" alt="" />
+            <h2>Black A-line dress</h2>
+            <p class="product-price discount">₹1800 <span>₹2500</span></p>
+          </div>
+          <div class="col">
+            <img src="img/special blouse.jpg" alt="" />
+            <h2>Green offshoulder Top</h2>
+            <p class="product-price discount">₹1200 <span>₹1500</span></p>
+          </div>
+          <div class="col">
+            <img src="img/special tshirts.jpg" alt="" />
+            <h2>Casual Tshirt</h2>
+            <p class="product-price discount">₹1000 <span>₹1300</span></p>
+          </div>
+          <div class="col">
+            <img src="img/speacial bottoms.jpg" alt="" />
+            <h2>Black pleated skirt</h2>
+            <p class="product-price discount">₹1000 <span>₹1300</span></p>
+          </div>
+        </div>
+      </div>
+      <div id="dresses">
+        <h4>Dresses</h4>
+        <div class="grid-container">
+          <div class="col">
+            <img src="img/dress1.jpg" alt="" />
+            <h2>Bodycon Dress</h2>
+            <p class="product-price discount">₹2200 <span>₹3000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/dress2.jpg" alt="" />
+            <h2>Floral Dress</h2>
+            <p class="product-price discount">₹2200 <span>₹3000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/dress3.jpeg" alt="" />
+            <h2>Cocktail Dress</h2>
+            <p class="product-price discount">₹2200 <span>₹3000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/dress4.jpg" alt="" />
+            <h2>Dress</h2>
+            <p class="product-price discount">₹2200 <span>₹3000</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tops">
+        <h4>Top Notch</h4>
+        <div class="grid-container">
+          <div class="col">
+            <img src="img/top2.jpg" alt="" />
+            <h2>Crop Top</h2>
+            <p class="product-price discount">₹400 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/top1.jpg" alt="" />
+            <h2>Crop Top</h2>
+            <p class="product-price discount">₹400 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/top3.jpg" alt="" />
+            <h2>Knitten sweater Top</h2>
+            <p class="product-price discount">₹300 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/top4.jpg" alt="" />
+            <h2>Cute knot Top</h2>
+            <p class="product-price discount">₹500 <span>₹1000</span></p>
+          </div>
+        </div>
+      </div>
+      <div id="Jewellery">
+        <h4>Jewellery</h4>
+        <div class="grid-container">
+          <div class="col">
+            <img src="img/jew2.jpg" alt="" />
+            <h2>Golden chunky Jewellery</h2>
+            <p class="product-price discount">₹800 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/jew1.jpg" alt="" />
+            <h2>Rings with neckpiece</h2>
+            <p class="product-price discount">₹800 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/jew3.jpg" alt="" />
+            <h2>Layered Chain</h2>
+            <p class="product-price discount">₹800 <span>₹1000</span></p>
+          </div>
+          <div class="col">
+            <img src="img/jew4.jog.jpg" alt="" />
+            <h2>Layered butterfly chain</h2>
+            <p class="product-price discount">₹800 <span>₹1000</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
